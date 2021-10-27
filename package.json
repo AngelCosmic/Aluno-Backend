@@ -25,4 +25,3 @@
       "start": "cd dist && node src/index.js"
    }
 }
-

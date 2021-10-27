@@ -1,8 +1,8 @@
 import "reflect-metadata";
 import { createConnection } from "typeorm";
-import * as express from "express";
-import * as bodyParser from "body-parser";
-import * as cors from 'cors';
+import express from "express";
+import bodyParser from "body-parser";
+import cors from 'cors';
 import routes from "./routes";
  
 const app = express()
@@ -15,6 +15,5 @@ app.use(routes)
 app.listen(process.env.PORT || 3002, () => {
   console.log('Servidor em Execução');
 });
-
 
 
